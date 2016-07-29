@@ -1,0 +1,329 @@
+@import "fonts.scss";
+@import "variables.scss";
+
+.row {
+	margin: 0px;
+}
+ 
+body {
+	max-width: 720px;
+	width: auto;
+	margin: auto;
+	min-width: 360px;
+	font-size: 16px;
+	.header {
+		width: 100%;
+		> {
+			.header__content {
+				width: auto;
+				margin: 2.1% 2.76%;
+				> {
+					.header__content__logo {
+						position: absolute;
+						width: 120px;
+						height: 120px;
+					}
+					.header__content__info {
+						margin-left: 140px;
+						display: inline-block;
+						width: auto;
+						> {
+							.header__content__info__name {
+								@media(max-width: 480px) {
+									margin-top: 40px;
+								}
+								> h3 {
+									font-size: 1em;
+									font-weight: bold;
+									color: $ant_font;
+									margin-top: 10px;
+									@media(max-width: 480px) {
+										font-size: 1.3em;
+									}
+								}
+							}
+							.header__content__info__description {
+								> h4 {
+									font-size: 0.75em;
+									color: $ant_font_light;
+									@media(max-width: 480px) {
+										font-size: 1em;
+									}
+								}
+							}
+							.header__content__info__message {
+								border-radius: 5px;
+								background-color: $light_yellow;
+								border: 1px solid $border;
+								margin-left: -100px;
+								padding-left: 100px;
+								font-size: 0.875em;
+								@media(max-width: 480px) {
+									margin: 40px 10px;
+									padding: 10px;
+									position: absolute;
+									width: auto;
+									left: 0px;
+									> p {
+										margin: 0px;
+									}
+								}
+							} 
+						}
+					}
+				}
+			}
+		}
+	}
+	.main {
+		margin-top: 0px;
+		@media(max-width: 480px) {
+			margin-top: 105px;
+		}
+		> .main__content {
+			width: 100%;
+			> .main__content__info {
+				> h3 {
+					font-size: 0.8125em;
+					text-align: right;
+					padding: 10px 40px;
+					margin: 0px;
+				}
+				> .main__content__info__services {
+					width: auto;
+					border-top: 1px solid $border;
+					border-bottom: 1px solid $border;
+					margin-right: 20px;
+					margin-left: 160px;
+					padding: 15px 0;
+					position: relative;
+					@media(max-width: 480px) {
+						width: 100%;
+						float: none;
+						padding: 15px 10px;
+						margin-left: 0px;
+					}
+					> .container {
+						padding: 0px;
+						border-left: 1px solid rgba(0,0,0,0.4);
+						width: auto;
+						> div {
+							width: 100%;
+							.cont {
+								margin: 7px 0;
+								float: left;
+								position: relative;
+								z-index: 10;
+								font-size: 0.8125em;
+								padding-left: 5px;
+							}
+							.diagram {
+								height: 24px;
+								float: left;
+								position: absolute;
+								margin-top: 0px;
+								z-index: 1;
+								border-radius: 0 5px 5px 0;
+							}
+							.summary {
+								margin: 7px 0;
+								float: right;
+								font-size: 0.8125em;
+								font-weight: bold;
+								padding-right: 35px;
+								z-index: 10;
+								position: relative;
+							}
+						}
+						> .main__content__info__services__hand {
+
+							.diagram {
+								background-color: $light_green;
+								width: 80%;
+							}
+							
+						}
+						> .main__content__info__services__pack {
+						
+							.diagram {
+								background-color: $light_blue;
+								width: 14%;
+							}
+							
+						}
+						> .main__content__info__services__hotels {
+							.cont {
+								margin: 7px 0 3px 0;
+							}
+							.diagram {
+								background-color: $light_blue;
+								width: 10%;
+							}
+							.summary { 
+								margin: 7px 0 3px 0;
+							}
+							
+						}
+					}
+					.main__content__info__services__statistics {
+						width: 100%;
+						float: right;
+						padding: 15px 0;
+						position: relative;		
+						> .main__content__info__services__statistics__title {
+							float: left;
+							font-size: 1em;
+							font-weight: bold;
+						}
+						> .main__content__info__services__statistics__num {
+							float: right;
+							font-size: 1em;
+							font-weight: bold;
+							padding-right: 35px;
+						}
+					}
+				}
+			}
+			> .main__content__dialog {
+				> .main__content__dialog__header {
+					padding: 10px 20px 10px 10px;
+					width: 100%;
+					> h3 {
+						display: inline-block;
+						font-size: 1em;
+						font-weight: bold;
+						margin: 0px;
+					}
+					> a {
+						display: inline-block;
+						font-size: 0.875em;
+						color: $dark_blue;
+						text-decoration: underline;
+						padding: 0 0 0 5px;
+					}
+					> img {
+						float: right;
+						padding-top: 3px;
+					}
+					> span {
+						float: right;
+						font-size: 0.75em;
+					}
+					> .num_msg {
+						margin-right: 20px;
+					}
+				}
+				> #dialog__space {
+					> .main__content__dialog__message {
+						padding: 10px;
+						> .main__content__dialog__message__name {
+							> span {
+								font-size: 0.875em;
+								font-weight: bold;
+								margin-right: 10px;
+							}
+							display: inline-block;
+						}
+						> .main__content__dialog__message__date {
+							> span {
+								font-size: 0.6875em;
+								color: $ant_font_light;
+							}
+							display: inline-block;
+						}
+						> .main__content__dialog__message__msg {
+							margin-top: 15px;
+							width: 100%;
+							border: 1px solid #cfcfcf;
+							padding: 15px;
+							background-color: $light-light_blue;
+							position: relative;
+							&::before {
+								content: "";
+								width: 0;
+								height: 0;
+								border-bottom: 11px solid $light-light_blue; 
+								border-right: 11px solid transparent;
+								top: -11px;
+								left: 16px;
+								position: absolute;	
+								z-index: 8;
+							}
+							&::after {
+								content: "";
+								width: 0;
+								height: 0;
+								border-bottom: 14px solid #cfcfcf; 
+								border-right: 14px solid transparent;
+								top: -14px;
+								left: 15px;
+								position: absolute;	
+								z-index: 7;
+							}
+						}
+					}
+				}
+				
+			}
+		}
+	}
+	.footer {
+		> .footer__content {
+			width: 100%;
+			background-color: $ant_gray;
+			padding: 30px 20px;
+			> .footer__content__field {
+				width: 100%;
+				height: 65px;
+				border-radius: 3px;
+				border: 1px solid #a9a9a9;
+				padding: 5px 15px;
+			}
+			> .footer__content__button {
+				width: 280px;
+				height: 40px;
+				margin: auto;
+				display: block;
+				margin-top: 25px;
+				border-radius: 50px;
+				border: 0px solid;
+				background-color: $down_yellow;
+				font-weight: bold;
+				outline: none;
+				transition: 0.4s;
+				&:hover {
+					background-color: #24b011;
+					transition: 0.4s;
+				}
+			}
+		}
+	}
+	.login-popup {
+		margin-top: 20vh;
+		> .header {
+			width: 70%;
+			margin: auto;
+			> select {
+				height: 25px;
+				width: 100%;
+				> option {
+					width: 50%;
+				}
+			}
+		}
+		> .cont {
+			> .main_field_log_in {
+				width: 70%;
+				margin: 20px auto;
+			}
+			> .main_field_reg_in {
+				width: 70%;
+				margin: 20px auto;
+			}
+		}
+	}
+}
+
+.close-popup {
+	display: none;
+}

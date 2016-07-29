@@ -1,0 +1,83 @@
+<header class="header">
+		<div class="header__content">
+			<div class="header__content__logo">
+				<img src="img/avatar.png" width="100%">
+			</div>
+			<div class="header__content__info">
+				<div class="header__content__info__name">
+					<h3>Вероника Ростова</h3>
+				</div>
+				<div class="header__content__info__description">
+					<h4>Менеджер по продажам</h4>
+				</div>
+				<div class="header__content__info__message">
+					<p>Подберу для Вас самые лучшие предложения. Мои услуги абсолютно бесплатны.</p>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<div class="main__content"> 
+			<div class="main__content__info row">  <!--  информация услуги  -->
+				<h3>Услуг</h3>
+				<div class="main__content__info__services">
+					<div class="container">
+						<div class="main__content__info__services__hand row">
+							<h3 class="cont" >Ручное бронирование</h3>
+							<div class="diagram"></div>
+							<h3 class="summary" id="hand_summary">11</h3>
+						</div>
+						<div class="main__content__info__services__pack row">
+							<h3 class="cont">Пакетные туры</h3>
+							<div class="diagram"></div>
+							<h3 class="summary" id="pack_summary">3</h3>
+						</div>
+						<div class="main__content__info__services__hotels row">
+							<h3 class="cont">Отели</h3>
+							<div class="diagram"></div>
+							<h3 class="summary" id="hotels_summary">1</h3>
+						</div>
+					</div>
+					<div class="main__content__info__services__statistics row">
+						<h2 class="main__content__info__services__statistics__title">Всего</h2>
+						<h2 id="services_summary" class="main__content__info__services__statistics__num">16</h2>
+					</div>
+				</div>
+				
+			</div>
+			<div id="dialog_form" class="main__content__dialog">  <!--  поле диалога  -->
+				<div id="dialog__header" class="main__content__dialog__header">  <!--  хедер с сердечками  -->
+					<h3>Последние отзывы</h3>
+					<a>Все отзывы</a>
+					<span class="num_love">14</span>
+					<img src="img/msg.png">
+					<span class="num_msg">131</span>
+					<img src="img/love.png">
+				</div>
+				<div id="dialog__space">
+					
+				</div>
+				<!--<div>
+					<div class="main__content__dialog__message">
+						<div class="main__content__dialog__message__name">
+							<span>Самуил</span>
+						</div>
+						<div class="main__content__dialog__message__date">
+							<span>14 января 2014</span>
+						</div>
+						<div class="main__content__dialog__message__msg">
+							Привет, Верунь! ниче себе ты крутая. фотка класс!!!! 
+						</div>
+					</div>
+				</div>-->
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__content row">
+			<input id="message__" type="text" name="field" class="footer__content__field">
+			<input type="button" name="field" class="footer__content__button" value="Написать консультанту" onclick="AddMessage()" hotkey='Ctrl + Enter'>
+		</div>
+	</footer>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html ng-app="SampleApp">
+<head lang="ru">
+	<title>antagosoft</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui">
+	<link rel="icon" href="img/icon.ico" type="image/png">
+
+	<script type="text/javascript" src="dependencies/jquery-2.2.4.js"></script>  <!-- jQuery -->
+	<script type="text/javascript" src="dependencies/angular.js"></script>  <!-- Angular -->
+	<script type="text/javascript" src="js/js.js"></script>   <!-- Мой скрипт -->
+	<script type="text/javascript" src="dependencies/hotkeys.js"></script>  <!-- hotkeys -->
+	
+	<link rel="stylesheet" href="dependencies/bootstrap.css"/>  <!-- БУТСТРАП -->
+	<link rel="stylesheet" href="dependencies/bootstrap-theme.css"/>  <!-- БУТСТРАП-темы -->
+	<link rel="stylesheet" href="css/style.css"/>  <!-- Мои стили -->
+	
+</head>
+<body ng-controller="SampleAppCtrl">
+
+
+	<div class="login-popup" >
+
+		<div class="header" >
+			<select class="btn-group" ng-model="mode" ng-options="item.display for item in options track by item.value">
+			</select>
+		</div>
+
+		<div class="cont" ng-switch on="mode.value">
+
+			<div class="main_field_log_in" ng-switch-when="login">
+				<form class="form-horizontal">
+					<div class="form-group">
+						<label for="mail" class="col-sm-2 control-label">Email</label>
+						<div class="col-sm-10">
+							<input type="email" class="form-control" id="mail_log" placeholder="Email">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="pass" class="col-sm-2 control-label">Password</label>
+						<div class="col-sm-10">
+							<input type="password" class="form-control" id="pass_log" placeholder="Пароль">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Remember me
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<button type="submit" class="btn btn-success" id="login_form" onclick="logINUSR()">Login</button>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="main_field_reg_in"  ng-switch-when="register">
+				<form class="form-horizontal">
+					<div class="form-group">
+						<label for="mail" class="col-sm-2 control-label">Nickname</label>
+						<div class="col-sm-10">
+							<input type="name" class="form-control" id="name_reg" placeholder="Nickname (eng)" pattern="^[а-яА-Яa-zA-Z0-9_\-]{1,}$">
+						</div>
+					</div>
+						<div class="form-group">
+							<label for="mail" class="col-sm-2 control-label">Email</label>
+							<div class="col-sm-10">
+								<input type="email" class="form-control" id="mail_reg" placeholder="example@gmail.com">
+							</div>
+						</div>
+					<div class="form-group">
+						<label for="pass" class="col-sm-2 control-label">Password</label>
+						<div class="col-sm-10">
+							<input type="password" class="form-control" id="pass_reg" placeholder="Password">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="pass" class="col-sm-2 control-label">Confirm</label>
+						<div class="col-sm-10">
+							<input type="password" class="form-control" id="confirm_pass_reg" placeholder="Confirm Password">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Remember Me
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<button type="submit" class="btn btn-success" id="reg_form" onclick="RegUSR()">Register Me</button>
+						</div>
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>

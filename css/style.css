@@ -1,0 +1,259 @@
+@font-face {
+  font-family: ArialBold;
+  src: url(../fonts/ArialBold.ttf);
+  src: url(../fonts/ArialBold.eot);
+  src: url(../fonts/ArialBold.woff); }
+@font-face {
+  font-family: ArialRegular;
+  src: url(../ArialRegular.ttf);
+  src: url(../ArialRegular.eot);
+  src: url(../ArialRegular.woff); }
+@font-face {
+  font-family: PTSansBold;
+  src: url(../fonts/PTSansBold.ttf); }
+.row {
+  margin: 0px; }
+
+body {
+  max-width: 720px;
+  width: auto;
+  margin: auto;
+  min-width: 360px;
+  font-size: 16px; }
+  body .header {
+    width: 100%; }
+    body .header > .header__content {
+      width: auto;
+      margin: 2.1% 2.76%; }
+      body .header > .header__content > .header__content__logo {
+        position: absolute;
+        width: 120px;
+        height: 120px; }
+      body .header > .header__content > .header__content__info {
+        margin-left: 140px;
+        display: inline-block;
+        width: auto; }
+        @media (max-width: 480px) {
+          body .header > .header__content > .header__content__info > .header__content__info__name {
+            margin-top: 40px; } }
+        body .header > .header__content > .header__content__info > .header__content__info__name > h3 {
+          font-size: 1em;
+          font-weight: bold;
+          color: #333333;
+          margin-top: 10px; }
+          @media (max-width: 480px) {
+            body .header > .header__content > .header__content__info > .header__content__info__name > h3 {
+              font-size: 1.3em; } }
+        body .header > .header__content > .header__content__info > .header__content__info__description > h4 {
+          font-size: 0.75em;
+          color: #808080; }
+          @media (max-width: 480px) {
+            body .header > .header__content > .header__content__info > .header__content__info__description > h4 {
+              font-size: 1em; } }
+        body .header > .header__content > .header__content__info > .header__content__info__message {
+          border-radius: 5px;
+          background-color: #fffbc8;
+          border: 1px solid #cecabf;
+          margin-left: -100px;
+          padding-left: 100px;
+          font-size: 0.875em; }
+          @media (max-width: 480px) {
+            body .header > .header__content > .header__content__info > .header__content__info__message {
+              margin: 40px 10px;
+              padding: 10px;
+              position: absolute;
+              width: auto;
+              left: 0px; }
+              body .header > .header__content > .header__content__info > .header__content__info__message > p {
+                margin: 0px; } }
+  body .main {
+    margin-top: 0px; }
+    @media (max-width: 480px) {
+      body .main {
+        margin-top: 105px; } }
+    body .main > .main__content {
+      width: 100%; }
+      body .main > .main__content > .main__content__info > h3 {
+        font-size: 0.8125em;
+        text-align: right;
+        padding: 10px 40px;
+        margin: 0px; }
+      body .main > .main__content > .main__content__info > .main__content__info__services {
+        width: auto;
+        border-top: 1px solid #cecabf;
+        border-bottom: 1px solid #cecabf;
+        margin-right: 20px;
+        margin-left: 160px;
+        padding: 15px 0;
+        position: relative; }
+        @media (max-width: 480px) {
+          body .main > .main__content > .main__content__info > .main__content__info__services {
+            width: 100%;
+            float: none;
+            padding: 15px 10px;
+            margin-left: 0px; } }
+        body .main > .main__content > .main__content__info > .main__content__info__services > .container {
+          padding: 0px;
+          border-left: 1px solid rgba(0, 0, 0, 0.4);
+          width: auto; }
+          body .main > .main__content > .main__content__info > .main__content__info__services > .container > div {
+            width: 100%; }
+            body .main > .main__content > .main__content__info > .main__content__info__services > .container > div .cont {
+              margin: 7px 0;
+              float: left;
+              position: relative;
+              z-index: 10;
+              font-size: 0.8125em;
+              padding-left: 5px; }
+            body .main > .main__content > .main__content__info > .main__content__info__services > .container > div .diagram {
+              height: 24px;
+              float: left;
+              position: absolute;
+              margin-top: 0px;
+              z-index: 1;
+              border-radius: 0 5px 5px 0; }
+            body .main > .main__content > .main__content__info > .main__content__info__services > .container > div .summary {
+              margin: 7px 0;
+              float: right;
+              font-size: 0.8125em;
+              font-weight: bold;
+              padding-right: 35px;
+              z-index: 10;
+              position: relative; }
+          body .main > .main__content > .main__content__info > .main__content__info__services > .container > .main__content__info__services__hand .diagram {
+            background-color: #b1e19b;
+            width: 80%; }
+          body .main > .main__content > .main__content__info > .main__content__info__services > .container > .main__content__info__services__pack .diagram {
+            background-color: #ace2f8;
+            width: 14%; }
+          body .main > .main__content > .main__content__info > .main__content__info__services > .container > .main__content__info__services__hotels .cont {
+            margin: 7px 0 3px 0; }
+          body .main > .main__content > .main__content__info > .main__content__info__services > .container > .main__content__info__services__hotels .diagram {
+            background-color: #ace2f8;
+            width: 10%; }
+          body .main > .main__content > .main__content__info > .main__content__info__services > .container > .main__content__info__services__hotels .summary {
+            margin: 7px 0 3px 0; }
+        body .main > .main__content > .main__content__info > .main__content__info__services .main__content__info__services__statistics {
+          width: 100%;
+          float: right;
+          padding: 15px 0;
+          position: relative; }
+          body .main > .main__content > .main__content__info > .main__content__info__services .main__content__info__services__statistics > .main__content__info__services__statistics__title {
+            float: left;
+            font-size: 1em;
+            font-weight: bold; }
+          body .main > .main__content > .main__content__info > .main__content__info__services .main__content__info__services__statistics > .main__content__info__services__statistics__num {
+            float: right;
+            font-size: 1em;
+            font-weight: bold;
+            padding-right: 35px; }
+      body .main > .main__content > .main__content__dialog > .main__content__dialog__header {
+        padding: 10px 20px 10px 10px;
+        width: 100%; }
+        body .main > .main__content > .main__content__dialog > .main__content__dialog__header > h3 {
+          display: inline-block;
+          font-size: 1em;
+          font-weight: bold;
+          margin: 0px; }
+        body .main > .main__content > .main__content__dialog > .main__content__dialog__header > a {
+          display: inline-block;
+          font-size: 0.875em;
+          color: #005da1;
+          text-decoration: underline;
+          padding: 0 0 0 5px; }
+        body .main > .main__content > .main__content__dialog > .main__content__dialog__header > img {
+          float: right;
+          padding-top: 3px; }
+        body .main > .main__content > .main__content__dialog > .main__content__dialog__header > span {
+          float: right;
+          font-size: 0.75em; }
+        body .main > .main__content > .main__content__dialog > .main__content__dialog__header > .num_msg {
+          margin-right: 20px; }
+      body .main > .main__content > .main__content__dialog > #dialog__space > .main__content__dialog__message {
+        padding: 10px; }
+        body .main > .main__content > .main__content__dialog > #dialog__space > .main__content__dialog__message > .main__content__dialog__message__name {
+          display: inline-block; }
+          body .main > .main__content > .main__content__dialog > #dialog__space > .main__content__dialog__message > .main__content__dialog__message__name > span {
+            font-size: 0.875em;
+            font-weight: bold;
+            margin-right: 10px; }
+        body .main > .main__content > .main__content__dialog > #dialog__space > .main__content__dialog__message > .main__content__dialog__message__date {
+          display: inline-block; }
+          body .main > .main__content > .main__content__dialog > #dialog__space > .main__content__dialog__message > .main__content__dialog__message__date > span {
+            font-size: 0.6875em;
+            color: #808080; }
+        body .main > .main__content > .main__content__dialog > #dialog__space > .main__content__dialog__message > .main__content__dialog__message__msg {
+          margin-top: 15px;
+          width: 100%;
+          border: 1px solid #cfcfcf;
+          padding: 15px;
+          background-color: #f2fbff;
+          position: relative; }
+          body .main > .main__content > .main__content__dialog > #dialog__space > .main__content__dialog__message > .main__content__dialog__message__msg::before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-bottom: 11px solid #f2fbff;
+            border-right: 11px solid transparent;
+            top: -11px;
+            left: 16px;
+            position: absolute;
+            z-index: 8; }
+          body .main > .main__content > .main__content__dialog > #dialog__space > .main__content__dialog__message > .main__content__dialog__message__msg::after {
+            content: "";
+            width: 0;
+            height: 0;
+            border-bottom: 14px solid #cfcfcf;
+            border-right: 14px solid transparent;
+            top: -14px;
+            left: 15px;
+            position: absolute;
+            z-index: 7; }
+  body .footer > .footer__content {
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 30px 20px; }
+    body .footer > .footer__content > .footer__content__field {
+      width: 100%;
+      height: 65px;
+      border-radius: 3px;
+      border: 1px solid #a9a9a9;
+      padding: 5px 15px; }
+    body .footer > .footer__content > .footer__content__button {
+      width: 280px;
+      height: 40px;
+      margin: auto;
+      display: block;
+      margin-top: 25px;
+      border-radius: 50px;
+      border: 0px solid;
+      background-color: #fdd639;
+      font-weight: bold;
+      outline: none;
+      -webkit-transition: 0.4s;
+              transition: 0.4s; }
+      body .footer > .footer__content > .footer__content__button:hover {
+        background-color: #24b011;
+        -webkit-transition: 0.4s;
+                transition: 0.4s; }
+  body .login-popup {
+    margin-top: 20vh; }
+    body .login-popup > .header {
+      width: 70%;
+      margin: auto; }
+      body .login-popup > .header > select {
+        height: 25px;
+        width: 100%; }
+        body .login-popup > .header > select > option {
+          width: 50%; }
+    body .login-popup > .cont > .main_field_log_in {
+      width: 70%;
+      margin: 20px auto; }
+    body .login-popup > .cont > .main_field_reg_in {
+      width: 70%;
+      margin: 20px auto; }
+
+.close-popup {
+  display: none; }
+
+/*# sourceMappingURL=style.css.map */
